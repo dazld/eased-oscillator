@@ -17,7 +17,7 @@ describe('when iterating between values', function () {
         });
 
         var vals = [10,11,12,13,14,15,14,13,12,11,10];
-        
+
         var result = vals.map(testOsc)
 
         result.should.eql(vals);
@@ -31,17 +31,9 @@ describe('when iterating between values', function () {
             easing: 'easeInOutQuad'
         });
 
-        testOsc().should.eql(0);
-        testOsc().should.eql(0.8);
-        testOsc().should.eql(3.2);
-        testOsc().should.eql(6.799999999999999);
-        testOsc().should.eql(9.200000000000001);
-        testOsc().should.eql(10);
-        testOsc().should.eql(9.200000000000001);
-        testOsc().should.eql(6.799999999999999);
-        testOsc().should.eql(3.2);
-        testOsc().should.eql(0.8);
-        testOsc().should.eql(0);
+        var vals = [0,0.8,3.2,6.799999999999999,9.200000000000001,10,9.200000000000001,6.799999999999999,3.2,0.8,0];
+        var result = vals.map(testOsc);
+        result.should.eql(vals);
     });
     it('should use a custom easing function if one is given', function () {
         testOsc= easedOsc({
@@ -53,18 +45,9 @@ describe('when iterating between values', function () {
             }
         });
 
-        testOsc().should.eql(10);
-        testOsc().should.eql(11);
-        testOsc().should.eql(12);
-        testOsc().should.eql(13);
-        testOsc().should.eql(14);
-        testOsc().should.eql(15);
-        testOsc().should.eql(14);
-        testOsc().should.eql(13);
-        testOsc().should.eql(12);
-        testOsc().should.eql(11);
-        testOsc().should.eql(10);
-        testOsc().should.eql(11);
+        var vals = [10,11,12,13,14,15,14,13,12,11,10];
+        var result = vals.map(testOsc)
+        result.should.eql(vals);
 
     });
 });
