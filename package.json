@@ -4,7 +4,7 @@
   "description": "Eased oscillator",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/dazld/eased-oscillator/issues"
   },
-  "homepage": "https://github.com/dazld/eased-oscillator#readme"
+  "homepage": "https://github.com/dazld/eased-oscillator#readme",
+  "dependencies": {
+    "easing-js": "^1.0.1",
+    "osk": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3",
+    "should": "^7.1.0"
+  }
 }

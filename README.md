@@ -23,3 +23,24 @@ console.log(osciQuad()); // 15
 // etc..
 
 ```
+
+Users can also specify a custom easing function if they wish:
+
+```js
+
+var linearOsc = easedOsc({
+    min: 0,
+    max: 5,
+    steps: 5,
+    easing: function(t,b,c,d){
+        return c * t / d + b;
+    }
+});
+
+console.log(linearOsc()); // 0
+console.log(linearOsc()); // 1
+console.log(linearOsc()); // 2
+// etc..
+
+
+```
