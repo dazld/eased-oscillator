@@ -1,0 +1,23 @@
+{
+  "name": "eased-oscillator",
+  "version": "1.0.0",
+  "description": "Eased oscillator",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dazld/eased-oscillator.git"
+  },
+  "keywords": [
+    "easing",
+    "oscillator"
+  ],
+  "author": "Dan Peddle <dan@flarework.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dazld/eased-oscillator/issues"
+  },
+  "homepage": "https://github.com/dazld/eased-oscillator#readme"
+}
