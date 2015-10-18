@@ -16,18 +16,11 @@ describe('when iterating between values', function () {
             steps: 5
         });
 
-        testOsc().should.eql(10);
-        testOsc().should.eql(11);
-        testOsc().should.eql(12);
-        testOsc().should.eql(13);
-        testOsc().should.eql(14);
-        testOsc().should.eql(15);
-        testOsc().should.eql(14);
-        testOsc().should.eql(13);
-        testOsc().should.eql(12);
-        testOsc().should.eql(11);
-        testOsc().should.eql(10);
-        testOsc().should.eql(11);
+        var vals = [10,11,12,13,14,15,14,13,12,11,10];
+        
+        var result = vals.map(testOsc)
+
+        result.should.eql(vals);
 
     });
     it('should use an reference to an easing function if passed', function () {
