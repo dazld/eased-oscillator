@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/dazld/eased-oscillator.svg?branch=master)](https://travis-ci.org/dazld/eased-oscillator)
+
 # Eased Oscillator
 
 Produces a function that oscillates between two values with an easing function
