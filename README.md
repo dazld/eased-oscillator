@@ -27,7 +27,7 @@ console.log(osciQuad()); // 15
 
 ```
 
-Users can also specify a custom easing function if they wish:
+You can also specify a custom function, that takes the standard four parameters (time/step, initial value, delta, number of steps) - also written as `t,b,c,d`:
 
 ```js
 
@@ -47,3 +47,7 @@ console.log(linearOsc()); // 2
 
 
 ```
+
+## Available easings
+
+All of the easing functions come from rdy's `easing-js`package, and can be seen here: https://github.com/rdy/easing-js/blob/master/src/easing.js
